@@ -30,14 +30,14 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="강화도 하나비 스파 펜션 - 객실안내" />
   <meta property="og:description" content="동막해수욕장 인근에 위치한 강화도 스파 펜션 하나비 입니다. 사계절 이용 가능한 개별 바베큐와 오션뷰, 낙조와 함께 제트 스파를 즐겨보세요." />
-  <meta property="og:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2025/12/26/mEAe8nHv2yFo.jpg" />
+  <meta property="og:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2025/12/26/47Ruo2LsBCQr.jpg" />
   <meta property="og:url" content="https://hanabipension.kr" />
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="강화도 하나비 스파 펜션 - 객실안내" />
   <meta name="twitter:description" content="동막해수욕장 인근에 위치한 강화도 스파 펜션 하나비 입니다. 사계절 이용 가능한 개별 바베큐와 오션뷰, 낙조와 함께 제트 스파를 즐겨보세요." />
-  <meta name="twitter:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2025/12/26/mEAe8nHv2yFo.jpg" />
+  <meta name="twitter:image" content="https://bookingplay-media.s3.amazonaws.com/item_images/2025/12/26/47Ruo2LsBCQr.jpg" />
   <meta name="naver-site-verification" content="819a6d1ab8ef370dcce71f0699a0d6b25009014c" />
   <meta name="google-site-verification" content="oDG7FVPYygEWMUjd_XzNgIVzlnrhs84aJO6rsP1Cad0" />
 </head>
@@ -243,6 +243,14 @@
                 </div>
               </div>
             </div>
+            <!-- s: 객실 평면도 — 원본 객실 상세의 평면도 크롤링 이미지가 있을 때만 노출.
+                 제목 영역 없이 도면 이미지 한 장만 놓는다. 없으면 매퍼가 구간째 숨긴다. -->
+            <div class="room_floorplan" data-room-floorplan-section style="display: none">
+              <!-- data-* : data-room-floorplan-image
+                   roomtypes[current] 평면도 이미지 → 없으면 섹션 미노출 -->
+              <img alt="객실 평면도" data-room-floorplan-image />
+            </div>
+            <!--// 객실 평면도 -->
             <div
               class="main_room"
               style="background: color-mix(in srgb, var(--color-primary) 55%, transparent)"
